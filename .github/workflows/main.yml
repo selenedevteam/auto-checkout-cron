@@ -13,5 +13,4 @@ jobs:
       - name: Trigger ASPX Auto Checkout
         run: |
           curl -I "http://accsoftacademy-002-site3.ktempurl.com" \
-               -H "ngrok-skip-browser-warning: true" \
                -H "User-Agent: GitHubCron"
