@@ -3,7 +3,7 @@ name: Daily Auto Checkout
 on:
   schedule:
     # 12:00 PM IST = 6:30 AM UTC
-    - cron: "42 19 * * *"
+    - cron: "20 06 * * *"
 
 jobs:
   ping:
@@ -12,6 +12,6 @@ jobs:
     steps:
       - name: Trigger ASPX Auto Checkout
         run: |
-          curl -I "https://unpatronisable-handsomeish-alita.ngrok-free.dev/AutoCheckout.aspx" \
+          curl -I "http://accsoftacademy-002-site3.ktempurl.com" \
                -H "ngrok-skip-browser-warning: true" \
                -H "User-Agent: GitHubCron"
